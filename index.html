@@ -1,0 +1,113 @@
+<!-- Designed and Coded with love from Byarugaba Jesse -->
+<!-- Distribute and Use freely for learning or other purposes -->
+<!-- Follow me on instagram and github, it motivates me to share my simple projects here -->
+<!--
+	------------------------------------------------------------------
+	*Published for free use and distribution
+	*Created by Byarugaba Jesse
+	*With love from Uganda
+	*Talk to the author for any inquiries and corrections
+	*Thank you...
+	------------------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Byarugaba Jesse">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="calc-conatiner">
+		<div class="header">
+			<span class="title">Calculator</span>
+			<span onclick="showInfo()" class="info-btn"><i title="About Me" class="fa fa-info-circle" ></i></span>
+		</div>
+		<div class="calc-screen">
+			<span id="top-screen"></span>
+			<span id="bottom-screen">0</span>
+		</div>
+		<div class="btn-row">
+			<button onclick="Power(2)" class="misc">x<sup>2</sup></button>
+			<button onclick="Power(3)" class="misc">x<sup>3</sup></button>
+			<button onclick="Misc('sin')" class="misc">sin</button>
+			<button onclick="Misc('tan')" class="misc">tan</button>
+		</div>
+		<div class="btn-row">
+			<button onclick="Misc('cos')" class="misc">cos</button>
+			<button onclick="Misc('log')" class="misc">log</button>
+			<button onclick="Misc('exponent')" class="misc">10<sup>x</sup></button>
+			<button onclick="decimal()" class="sign">.</button>
+		</div>
+		<div class="btn-row">
+			<button onclick="Number(7)">7</button>
+			<button onclick="Number(8)">8</button>
+			<button onclick="Number(9)">9</button>
+			<button onclick="Sign('/')" class="sign">/</button>
+		</div>
+		<div class="btn-row">
+			<button onclick="Number(4)">4</button>
+			<button onclick="Number(5)">5</button>
+			<button onclick="Number(6)">6</button>
+			<button onclick="Sign('*')" class="sign">*</button>
+		</div>
+		<div class="btn-row">
+			<button onclick="Number(1)">1</button>
+			<button onclick="Number(2)">2</button>
+			<button onclick="Number(3)">3</button>
+			<button onclick="Sign('-')" class="sign">-</button>
+		</div>
+		<div class="btn-row">
+			<button onclick="Number(0)">0</button>
+			<button onclick="del()">C</button>
+			<button onclick="erase()">CE</button>
+			<button onclick="Sign('+')" class="sign">+</button>
+		</div>
+		<div class="btn-row">
+			<button onclick="getAnswer()" class="equalsbtn">=</button>
+		</div>
+	</div>
+	
+	<!-- information section -->
+
+	<div class="info-tab" id="info-tab">
+			<div class="header">
+				About Me
+				<span onclick="hideInfo()" id="close-btn">&times;</span>
+			</div>
+			<div class="pic-section">
+				<img src="images/img1.jpg">
+			</div>
+			<div class="name-section">
+				<span class="name">Byarugaba Jesse</span>
+			</div>
+			<div class="occu-section">
+				<span class="title">Contact Me</span>
+				<div class="contact-btns">
+					<span><a title="Facebook" href="https://www.facebook.com/ByarugabJesse"><i class="fa fa-facebook"></i></a></span>
+					<span><a title="LinkedIn" href="https://www.linkedin.com/in/jesse-byarugaba-64489414b"><i class="fa fa-linkedin"></i></a></span>
+					<span><a title="Github" href="https://www.github.com/phino-phite"><i class="fa fa-github"></i></a></span>
+					<span><a title="Instagram" href="https://www.instagram.com/byarugabajesse_codes/"><i class="fa fa-instagram"></i></a></span>
+				</div>
+			</div>
+			<div class="occu-section">
+				<span class="title">What I do</span>
+				<div class="occupation">Web Developer</div>
+				<div class="occupation">3d Graphics Designer</div>
+				<div class="occupation">Computer Programmer</div>
+				<div class="occupation">Cyber Security Researcher</div>
+			</div>
+	</div>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
+<!-- Designed and Coded with love from Byarugaba Jesse -->
+<!-- Distribute and Use freely for learning or other purposes -->
+<!-- Follow me on instagram and github, it motivates me to share my simple projects here -->
